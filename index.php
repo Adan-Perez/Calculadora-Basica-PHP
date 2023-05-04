@@ -9,8 +9,8 @@
 		<input type="number" name="num1"><br><br>
 		<label>Segundo número:</label><br>
 		<input type="number" name="num2"><br><br>
-		<label>Operación:</label><br>
-		<select name="operacion">
+		<label>Operación a realizar:</label><br>
+		<select name="operation">
 			<option value="addition">Suma</option>
 			<option value="substraction">Resta</option>
 			<option value="multiplication">Multiplicación</option>
@@ -24,8 +24,8 @@
 	if($_POST){
 		$num1 = $_POST['num1'];
 		$num2 = $_POST['num2'];
-		$operacion = $_POST['operacion'];
-		switch($operacion){
+		$operation = $_POST['operation'];
+		switch($operation){
 			case "addition":
 				echo "El resultado es: " . ($num1 + $num2);
 				break;
